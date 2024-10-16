@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px; /* Maximum width for larger screens */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6f61;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+select {
+    width: 100%; /* Full width to make inputs easy to use */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Smaller and cute button, keeping the original color */
+button {
+    background-color: #ff6f61; /* Keep the original color */
+    color: white;
+    padding: 8px 15px;  /* Smaller padding for a cute appearance */
+    border: none;
+    border-radius: 20px;  /* Rounded for a cute look */
+    cursor: pointer;
+    display: inline-block;  /* Keep the button size manageable */
+    font-size: 14px;  /* Slightly smaller font size for a softer look */
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #e65a50;  /* Keep original hover color */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);  /* Add a soft shadow for hover effect */
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f1f8e9;
+    border-radius: 10px;
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px; /* Reduce margin on smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+
+    h1 {
+        font-size: 24px; /* Adjust heading size for smaller screens */
+    }
+
+    button {
+        font-size: 12px; /* Smaller font size for buttons on mobile */
+        padding: 6px 12px; /* Smaller padding for buttons */
+    }
+}

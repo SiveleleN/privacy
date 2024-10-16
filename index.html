@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire for My Boyfriend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fun Questionnaire for You 💖</h1>
+        <form id="quizForm" action="https://formspree.io/f/manyylpr"
+        method="POST">
+            <div class="question" id="question1">
+                <label for="q1">1. What’s one thing you’d love me to do more often?</label><br>
+                <input type="text" id="q1" name="q1" placeholder="Type your answer here" required>
+                <button type="button" class="nextBtn" onclick="nextQuestion(2)">Next</button>
+            </div>
+
+            <div class="question" id="question2" style="display:none;">
+                <label for="q2">2. What’s something I do that you find super cute?</label><br>
+                <input type="text" id="q2" name="q2" placeholder="Type your answer here" required>
+                <button type="button" class="nextBtn" onclick="nextQuestion(3)">Next</button>
+            </div>
+
+            <div class="question" id="question3" style="display:none;">
+                <label for="q3">3. How often do you want to spend time with me?</label><br>
+                <input type="text" id="q3" name="q3" placeholder="Type your answer here" required>
+                <button type="button" class="nextBtn" onclick="nextQuestion(4)">Next</button>
+            </div>
+
+            <div class="question" id="question4" style="display:none;">
+                <label for="q4">4. Is there something I do that annoys you?</label><br>
+                <input type="text" id="q4" name="q4" placeholder="Type your answer here" required>
+                <button type="button" class="nextBtn" onclick="nextQuestion(5)">Next</button>
+            </div>
+
+            <div class="question" id="question5" style="display:none;">
+                <label for="q5">5. Do you ever feel the need to address what you don't like?</label><br>
+                <input type="text" id="q5" name="q5" placeholder="Type your answer here" required>
+                <button type="button" class="nextBtn" onclick="nextQuestion(6)">Next</button>
+            </div>
+
+            <div class="question" id="question6" style="display:none;">
+                <label for="q6">6. How do you feel about spontaneous plans?</label><br>
+                <select id="q6" name="q6" required>
+                    <option value="Love them!">Love them!</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Not a fan">Not a fan</option>
+                </select>
+                <button type="button" class="nextBtn" onclick="nextQuestion(7)">Next</button>
+            </div>
+
+            <div class="question" id="question7" style="display:none;">
+                <label for="q7">7. Do you prefer more surprises or fewer surprises?</label><br>
+                <select id="q7" name="q7" required>
+                    <option value="More surprises!">More surprises!</option>
+                    <option value="Fewer surprises.">Fewer surprises.</option>
+                    <option value="No surprises, please.">No surprises, please.</option>
+                </select>
+                <button type="submit" class="submitBtn">Submit</button>
+            </div>
+        </form>
+
+        <!-- Result section -->
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
